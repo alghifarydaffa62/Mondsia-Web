@@ -216,7 +216,9 @@ nav ul li a:hover::after {
     font-size: 30px;
     font-family: 'Merienda', cursive;
 }
-
+.sumatra-culture span {
+    color: red;
+}
 .sumatra-culture p {
     position: absolute;
     left: 107px;
