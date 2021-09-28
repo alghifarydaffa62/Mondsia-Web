@@ -183,7 +183,7 @@ nav ul li a:hover::after {
 
 .text-box p {
     margin: 30px 0 40px;
-    font-size: 18px;
+    font-size: 14px;
     color: white;
     text-align: center;
     justify-content: justify;
@@ -191,7 +191,7 @@ nav ul li a:hover::after {
 }
 
 .text-box h1 {
-    font-size: 40px;
+    font-size: 35px;
     font-family: 'Merienda', cursive;
 }
 
@@ -216,7 +216,9 @@ nav ul li a:hover::after {
     font-size: 30px;
     font-family: 'Merienda', cursive;
 }
-
+.sumatra-culture span {
+    color: red;
+}
 .sumatra-culture p {
     position: absolute;
     left: 107px;
@@ -412,4 +414,15 @@ nav ul li a:hover::after {
     justify-content: space-between;
 }
 
+@media(max-width: 767px) {
+    .row3 {
+        flex-direction: column;
+    }
+    .row4 {
+        flex-direction: column;
+    }
+    .row5 {
+        flex-direction: column;
+    }     
+}
 /* end of page sumatra *
