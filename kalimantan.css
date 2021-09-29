@@ -151,7 +151,7 @@ nav ul li a:hover::after {
         background-color: #24262b;
         z-index: 1;
         transform: translateX(100%);
-        transition: all 0,5s;
+        transition: all 1s;
     }
     nav ul li a {
         color: white;
@@ -188,7 +188,7 @@ nav ul li a:hover::after {
     width: 1372px;
     height: 654px;
     padding-top: 15px;
-    filter: brightness(50%);
+    filter: brightness(35%);
     
 }
 .text-box3 {
@@ -227,36 +227,38 @@ nav ul li a:hover::after {
     box-shadow: 0 0 20px 0 white;
     border-radius: 33px;
 }
-/* section kalimantanese culutre */
-.kalimantanese-culture h1 {
-    text-align:justify;
-    font-size: 30px;
-    font-family: 'Merienda', cursive;
-    margin-top: 75px;
-    margin-left: 75px;
-}
-.kalimantanese-culture p {
-    text-align: justify;
-    font-family: 'Montserrat';
-    margin-top: 45px;
-    margin-left: 75px;
 
+/* section kalimantanese culutre */
+
+.kalimantan-heading  {
+    text-align:left;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Merienda', cursive;
+    padding-top: 75px;
+    padding-left: 75px;
 }
-.kalimantanese-culture span {
+.kalimantan-heading span {
     color: red;
 }
-.kalimantanese-culture img {
-    position: absolute;
+.text-boxkalimantan {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.text-boxkalimantan p {
+    text-align: justify;
+    font-family: 'Montserrat';
+    margin-left: 75px;
+}
+.text-boxkalimantan img {
     width: 613.27px;
     height: 379.07px;
-    left: 698px;
-    top: 750px;
-    padding-top: 65px;
+    padding-top: 45px;
 }
-.kalimantanese-culture img:hover {
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 
-}
 /* tari kalimantan */
 .tarikalimantan {
     width: 80%;
@@ -264,17 +266,18 @@ nav ul li a:hover::after {
     text-align: center;
     padding-top: 100px;
 }
-.tarikalimantan h1 {
+.tarikalimantan-heading {
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     color: red;
     font-family: 'Merienda', cursive;
-    padding-top: 220px;
+    padding-top: 90px;
+    display: inline-flex;
+    align-items: center;
 }
-.tarikalimantan img {
-    width: 225px;
-    height: 137px;
-    border-radius: 18px;
+.tarikalimantan-heading img {
+    width: 60px;
+    height: 54px;
 }
 .tarikalimantan-col {
     flex-basis: 31%;
@@ -291,7 +294,10 @@ nav ul li a:hover::after {
 .tarikalimantan-col img{
     margin-left:auto;
     margin-right:auto;
-    display:block
+    display:block;
+    width: 225px;
+    height: 137px;
+    border-radius: 18px;
 }
 .tarikalimantan-col h3{
     margin-top: 16px;
@@ -434,4 +440,16 @@ nav ul li a:hover::after {
         background-size: cover;
         position: relative;
     }
+    .text-boxkalimantan {
+        flex-direction: column;
+    }
+    .text-boxkalimantan img {
+        width: 450px;
+        height: 250px;
+    }
+    .text-boxkalimantan p {
+        font-size: 13px;
+
+    }
+    
 }

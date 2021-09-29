@@ -151,7 +151,7 @@ nav ul li a:hover::after {
         background-color:#24262b;
         z-index: 1;
         transform: translateX(100%);
-        transition: all 0,5s;
+        transition: all 1s;
     }
     nav ul li a {
         color: white;

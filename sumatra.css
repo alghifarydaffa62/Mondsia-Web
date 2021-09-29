@@ -7,7 +7,9 @@ body {
     font-family:'Montserrat' sans-serif;
     overflow-x: hidden;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 /* navbar */
 nav {
     display: flex;
@@ -151,7 +153,7 @@ nav ul li a:hover::after {
         background-color:#24262b;
         z-index: 1;
         transform: translateX(100%);
-        transition: all 0,5s;
+        transition: all 1s;
     }
     nav ul li a {
         color: white;
@@ -168,7 +170,7 @@ nav ul li a:hover::after {
     width: 1372px;
     height: 654px;
     padding-top: 10px;
-    filter: brightness(50%);
+    filter: brightness(35%);
 }
 
 .text-box {
@@ -183,7 +185,7 @@ nav ul li a:hover::after {
 
 .text-box p {
     margin: 30px 0 40px;
-    font-size: 14px;
+    font-size: 15px;
     color: white;
     text-align: center;
     justify-content: justify;
@@ -206,62 +208,89 @@ nav ul li a:hover::after {
     position: relative;
     cursor: pointer;
 }
-
+.sumatra-btn:hover {
+    box-shadow: 0 0 20px 0 white;
+    border-radius: 33px;
+}
+.circle1 {
+    position: absolute;
+    width: 700px;
+    height: 634px;
+    left: -205px;
+    top: 1350px;
+    background: radial-gradient(50% 50% at 50% 50%, #FCE468 21.87%, rgba(242, 223, 120, 0.826667) 76.04%, rgba(196, 196, 196, 0) 100%);
+    z-index: -1
+}
+.circle2 {
+    position: absolute;
+    width: 1000px;
+    height: 988px;
+    left: -536px;
+    top: 1800px;
+    background: radial-gradient(50% 50% at 50% 50%, #A6C8FC 0%, rgba(81, 150, 255, 0) 100%);
+    transform: rotate(-23.06deg);
+    z-index: -1;
+}
+.circle3 {
+    position: absolute;
+    width: 976px;
+    height: 865px;
+    left: -371px;
+    top: 2200px;
+    background: radial-gradient(50% 50% at 50% 50%, #FCC7AA 0%, rgba(255, 92, 1, 0) 100%);
+    z-index: -1;
+}
 /* sumatra culture */
 
-.sumatra-culture h1 {
-    position: absolute;
-    left: 190px;
-    top: 820px;
-    font-size: 30px;
+.sumatra-heading {
+    text-align: left;
+    align-items: center;
+    font-size: 20px;
     font-family: 'Merienda', cursive;
+    margin-left: 125px;
+    margin-top: 80px;
 }
-.sumatra-culture span {
+.sumatra-heading span {
     color: red;
 }
-.sumatra-culture p {
-    position: absolute;
-    left: 107px;
-    top: 935px;
-    text-align: justify;
-    font-family: 'Montserrat';
+.textbox-sumatra {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
-.sumatra-culture img {
-    position: absolute;
+.textbox-sumatra img {
     width: 613.27px;
     height: 379.07px;
-    left: 698px;
-    top: 838.07px;
+    margin-right: 45px;
 }
-
-.sumatra-culture img:hover {
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
-
+.textbox-sumatra p {
+    font-size: 16px;
+    margin-left: 70px;
+    font-family: 'Montserrat';
 }
 
 /* tari adat sumatra */
 .tarisumatra {
     width: 80%;
     margin: auto;
-    text-align: left;
+    text-align: center;
     padding-top: 100px;
 }
-
-.tarisumatra h1 {
+.tarisumatra-heading {
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     color: red;
     font-family: 'Merienda', cursive;
-    padding-top: 500px;
+    padding-top: 100px;
+    display: inline-flex;
+    align-items: center;
 }
-
-.tarisumatra img {
-    width: 225px;
-    height: 137px;
-    border-radius: 18px;
+.tarisumatra-heading img {
+    width: 60px;
+    height: 54px;
 }
-
 .tarisumatra-col {
     flex-basis: 31%;
     border-radius: 10px;
@@ -279,7 +308,10 @@ nav ul li a:hover::after {
 .tarisumatra-col img {
     margin-left: auto;
     margin-right: auto;
-    display: block
+    display: block;
+    width: 225px;
+    height: 137px;
+    border-radius: 18px;
 }
 
 .tarisumatra-col h3 {
@@ -306,18 +338,17 @@ nav ul li a:hover::after {
     text-align: center;
     padding-top: 100px;
 }
-
-.rumahsumatra h1 {
+.rumahsumatra-heading {
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     color: red;
     font-family: 'Merienda', cursive;
+    display: inline-flex;
+    align-items: center;
 }
-
-.rumahsumatra img {
-    width: 270px;
-    height: 142px;
-    border-radius: 18px;
+.rumahsumatra-heading img {
+    width: 60px;
+    height: 54px;
 }
 
 .rumahsumatra-col {
@@ -338,6 +369,9 @@ nav ul li a:hover::after {
     margin-left: auto;
     margin-right: auto;
     display: block;
+    width: 270px;
+    height: 142px;
+    border-radius: 18px;
 }
 
 .rumahsumatra-col h3 {
@@ -363,18 +397,18 @@ nav ul li a:hover::after {
     text-align: center;
     padding-top: 100px;
 }
-
-.sukusumatra h1 {
+.sukusumatra-heading{
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     color: red;
     font-family: 'Merienda', cursive;
+    display: inline-flex;
+    align-items: center;
 }
 
-.sukusumatra img {
-    width: 270px;
-    height: 142px;
-    border-radius: 18px;
+.sukusumatra-heading img {
+    width: 60px;
+    height: 54px;
 }
 
 .sukusumatra-col {
@@ -395,6 +429,9 @@ nav ul li a:hover::after {
     margin-left: auto;
     margin-right: auto;
     display: block;
+    width: 270px;
+    height: 142px;
+    border-radius: 18px;
 }
 
 .sukusumatra-col h3 {
@@ -413,7 +450,7 @@ nav ul li a:hover::after {
     display: flex;
     justify-content: space-between;
 }
-
+/* responsive */
 @media(max-width: 767px) {
     .row3 {
         flex-direction: column;
@@ -423,6 +460,22 @@ nav ul li a:hover::after {
     }
     .row5 {
         flex-direction: column;
+    }
+    .textbox-sumatra {
+        flex-direction: column ;
     }     
+    .textbox-sumatra img {
+        width: 413.27px;
+        height: 279.07px;
+    }
+    .textbox-sumatra p {
+        font-size: 12px;
+    }
+    .circle2{
+        top: 2800px;
+    }
+    .circle3 {
+        top: 4000px;
+    }
 }
 /* end of page sumatra *
