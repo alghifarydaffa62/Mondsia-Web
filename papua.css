@@ -269,7 +269,7 @@ nav ul li a:hover::after {
 .papua-culture img:hover {
     box-shadow:  0 0 20px 0px blue;
 }
-/* tari kalimantan */
+/* tari Papua */
 .taripapua {
     width: 80%;
     margin: auto;
@@ -340,11 +340,6 @@ nav ul li a:hover::after {
     text-align: center;
     padding-top: 100px;
 }
-.rumahpapua img {
-    width: 225px;
-    height: 137px;
-    border-radius: 18px;
-}
 .rumahpapua-heading {
     text-align: center;
     font-size: 20px;
@@ -360,13 +355,22 @@ nav ul li a:hover::after {
 .rumahpapua-col img {
     margin-left:auto;
     margin-right:auto;
-    display:block
+    display:block;
+    width: 225px;
+    height: 137px;
+    border-radius: 18px;
 }
 .rumahpapua-col {
     flex-basis: 31%;
     border-radius: 10px;
     margin-bottom: 5px;
     text-align: left;
+}
+.rumahpapua-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'Merienda', cursive;
 }
 .rumahpapua-col p{
     text-align: justify;
@@ -383,12 +387,6 @@ nav ul li a:hover::after {
     top: 1975px;
     background: radial-gradient(50% 50% at 50% 50%, #FCC7AA 0%, rgba(255, 92, 1, 0) 100%);
     z-index: -1;
-}
-.rumahpapua-col h3{
-    margin-top: 16px;
-    margin-bottom: 15px;
-    text-align: center;
-    font-family: 'Merienda', cursive;
 }
 .rumahpapua-col:hover {
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
@@ -428,7 +426,6 @@ nav ul li a:hover::after {
     font-family: 'Montserrat';
     font-size: 14px;
 }
-
 .sukupapua-col img{
     margin-left:auto;
     margin-right:auto;
@@ -445,7 +442,6 @@ nav ul li a:hover::after {
 }
 .sukupapua-col:hover {
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
-
 }
 /* responsive */
 @media(max-width: 767px) {

@@ -7,7 +7,9 @@ body {
     font-family:'Montserrat' sans-serif;
     overflow-x: hidden;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 /* navbar */
 nav {
     display: flex;
@@ -151,7 +153,7 @@ nav ul li a:hover::after {
         background-color:#24262b;
         z-index: 1;
         transform: translateX(100%);
-        transition: all 0,5s;
+        transition: all 1s;
     }
     nav ul li a {
         color: white;
@@ -163,285 +165,306 @@ nav ul li a:hover::after {
 }
 /* end of navbar */
 
-    #background {
-        width: 0px;
-        height: 0px;
+/* circle */
+.circle1 {
+    position: absolute;
+    width: 810px;
+    height: 813px;
+    left: -405px;
+    top: 882px;
+    background: radial-gradient(50% 50% at 50% 50%, #FFDD28 0%, rgba(255, 122, 0, 0) 100%);
+}
+.circle2 {
+    position: absolute;
+    width: 842px;
+    height: 825px;
+    left: -450px;
+    top: 1679px;
+    background: radial-gradient(50% 50% at 50% 50%, #FC0000 0%, rgba(255, 105, 0, 0.28) 81.25%, rgba(255, 153, 0, 0) 100%);
+    z-index: -1;
+}
+.circle3 {
+    position: absolute;
+    width: 799px;
+    height: 806px;
+    left: -311px;
+    top: 2500px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 202, 16, 0.9) 0%, rgba(184, 255, 32, 0.590625) 71.88%, rgba(84, 255, 81, 0) 97.92%);
+    z-index: -1;
+}
+/* landing section */
+
+.landing-sulawesi img {
+    width: 1372px;
+    height: 637px;
+    filter: brightness(40%);
+    margin-top: 10px;
+}
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box p {
+    margin: 30px 0 40px;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    justify-content: justify;
+    font-family: 'Montserrat';
+}
+.text-box h1 {
+    font-size: 40px;
+    font-family: 'Merienda', cursive;
+}
+.button {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border-radius: 33px;
+    padding: 12px 34px;
+    font-size: 20px;
+    background: #FCEBC0;
+    position: relative;
+    cursor: pointer;
+}
+.button:hover {
+    box-shadow: 0 0 20px 0 white;
+    border-radius: 33px;
+}
+
+/* sulawesi culture */
+.sulawesi-culture {
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+    padding-top: 50px;  
+}
+.sulawesi-heading span {
+    color: red;
+}
+.sulawesi-heading h1 {
+    font-size: 30px;
+    font-family: 'Merienda', cursive;
+}
+.text-box2 {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.text-box2 img {
+    width: 544px;
+    height: 415px;
+}
+.text-box2 p {
+    font-size: 21px;
+    margin-top: 75px;
+}
+.image1 {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    left: 901px;
+    top: 795px;
+    border-radius: 30px;
+}
+.image2 {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    left: 812px;
+    top: 1138px;
+    border-radius: 30px;
+}
+.image3 {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    left: 206px;
+    top: 1140px;
+    border-radius: 30px;
+}
+.sulawesi-culture img:hover {
+    box-shadow: 0 0 20px 0px navy;
+}
+
+/* tari sulawesi */
+
+.tarisulawesi {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.tarisulawesi-heading {
+    text-align: center;
+    font-size: 20px;
+    color: red;
+    font-family: 'Merienda', cursive;
+    margin-top: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tarisulawesi-heading img {
+    width: 60px;
+    height: 54px;
+}
+.tarisulawesi-col {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+.tarisulawesi-col p{
+    text-align: justify;
+    line-height: 22px;
+    padding: 0;
+    font-family: 'Montserrat';
+    font-size: 14px;
+}
+.tarisulawesi-col img{
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    width: 225px;
+    height: 137px;
+    border-radius: 18px;
+}
+.tarisulawesi-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'Merienda', cursive;
+}
+.tarisulawesi-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}    
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Rumah Adat Papua */
+.rumahsulawesi {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.rumahsulawesi-heading {
+    text-align: center;
+    font-size: 20px;
+    color: red;
+    font-family: 'Merienda', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rumahsulawesi-heading img {
+    width: 55px;
+    height: 49px;
+}
+.rumahsulawesi-col {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+.rumahsulawesi-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'Merienda', cursive;
+}
+.rumahsulawesi-col p{
+    text-align: justify;
+    line-height: 22px;
+    padding: 0;
+    font-family: 'Montserrat';
+    font-size: 14px;
+}
+.rumahsulawesi-col img {
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    width: 225px;
+    height: 137px;
+    border-radius: 18px;
+}
+.rumahsulawesi-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+/* Suku Daerah sulawesi */
+
+.sukusulawesi {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.sukusulawesi-heading {
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    font-family: 'Merienda', cursive;
+}
+.sukusulawesi-heading img {
+    width: 55px;
+    height: 49px;
+}
+.sukusulawesi-col {
+    flex-basis: 31%;
+    border-radius: 30px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+.sukusulawesi-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'Merienda', cursive;
+}
+.sukusulawesi-col p{
+    text-align: justify;
+    line-height: 22px;
+    padding: 0;
+    font-family: 'Montserrat';
+    font-size: 14px;
+}
+.sukusulawesi-col img{
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    width: 225px;
+    height: 137px;
+    border-radius: 18px;
+}
+.sukusulawesi-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* rsponsive */
+
+@media (max-width:767px) {
+    .row {
+        flex-direction: column;
     }
-    .transbox {
-        background-color: black;
-        opacity: 0.6;
+    .landing-sulawesi img {
+        min-height: 75vh;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        width: 100%;
     }
-    .transbox p {
-        margin: 0px;
-        font-size: xx-large;
-        color: white;
-        opacity: 1;
-        font-family: 'Merienda', cursive;
-    }
-    .transbox p2 {
-        margin-left: 200px;
-        font-size: x-large;
-        color: white;
-        opacity: 1;
-        font-family:'Montserrat', sans-serif;
-    }
-    #Culture {
-        height: 90px;
-        margin-top: 100px;
-        margin-left: 150px;
-        font-size: xx-large;
-        float: left;
-        color: red;
-        font-family: 'Merienda', cursive;
-    }
-    #Senjata {
-        width: 262px;
-        height: 0px;
-        margin-top: 130px;
-        margin-right: 100px;
-        float: right;
-    }
-    #CultureContent {
-        margin-top: 0px;
-        margin-left: 80px;
-        height: 0px;
-        float: left;
-        font-size: x-large;
-        font-family:'Montserrat', sans-serif;
-    }
-    #TPAdat {
-        width: 275px;
-        height: 0px;
-        margin-top: 200px;
-        margin-left: 80px;
-        float: left;
-    }
-    #Desa {
-        width: 275px;
-        height: 0px;
-        margin-top: 200px;
-        margin-right: 150px;
-        float: right;
-    }
-    #tAdat {
-        margin-top: 500px;
-        color:red;
-        font-size: xx-large;
-        font-family: 'Merienda', cursive;
-    }
-    #tgbT {
-        width: 240px;
-        margin-top: 40px;
-        margin-left: 70px;
-        font-size: x-large;
-        font-weight: bold;
-        float: left;
-        font-family:'Montserrat', sans-serif;
-    }
-    #tpT {
-        width: 170px;
-        margin-top: 40px;
-        margin-left: 129px;
-        font-size: x-large;
-        font-weight: bold;
-        float: left;
-        font-family:'Montserrat', sans-serif;
-    }
-    #tpjT {
-        margin-top: 40px;
-        margin-left: 160px;
-        font-size: x-large;
-        font-weight: bold;
-        float: left;
-        font-family:'Montserrat', sans-serif;
-    }
-    #tgbG {
-        width: 0px;
-        margin-top: 30px;
-        margin-left: 40px;
-        float: left;
-    }
-    #tpG {
-        width: 0px;
-        margin-top: 30px;
-        margin-left: 340px;
-        float: left;
-    }
-    #tpjG {
-        width: 0px;
-        margin-top: 30px;
-        margin-left: 320px;
-        float: left;
-    }
-    #tgbt {
-        width: 300px;
-        margin-top: 40px;
-        margin-left: 40px;
-        font-size: x-large;
-        float: left;
-        font-family:'Montserrat', sans-serif;
-    }
-    #tpt {
-        width: 300px;
-        margin-top: 40px;
-        margin-left: 40px;
-        font-size: x-large;
-        float: left;
-        font-family:'Montserrat', sans-serif;
-    }
-    #tpjt {
-        width: 300px;
-        margin-top: 40px;
-        margin-left: 20px;
-        font-size: x-large;
-        float: left;
-        font-family:'Montserrat', sans-serif;
-    }
-    #rAdat {
-        margin-top: 200px;
-        color:red;
-        font-size: xx-large;
-        font-family: 'Merienda', cursive;
-    }
-    #rtT {
-        width: 240px;
-        margin-top: 40px;
-        margin-left: 100px;
-        font-size: x-large;
-        font-weight: bold;
-        float: left;
-        font-family:'Montserrat', sans-serif;
-    }
-    #rlT {
-        width: 150px;
-        margin-top: 40px;
-        margin-left: 99px;
-        font-size: x-large;
-        font-weight: bold;
-        float: left;
-        font-family:'Montserrat', sans-serif;
-    }
-    #rsT {
-        margin-top: 40px;
-        margin-left: 170px;
-        font-size: x-large;
-        font-weight: bold;
-        float: left;
-        font-family:'Montserrat', sans-serif;
-    }
-    #rtG {
-        width: 0px;
-        margin-top: 30px;
-        margin-left: 40px;
-        float: left;
-    }
-    #rlG {
-        width: 0px;
-        margin-top: 30px;
-        margin-left: 340px;
-        float: left;
-    }
-    #rsG {
-        width: 0px;
-        margin-top: 30px;
-        margin-left: 320px;
-        float: left;
-    }
-    #rtt {
-        width: 300px;
-        margin-top: 40px;
-        margin-left: 40px;
-        font-size: x-large;
-        float: left;
-        font-family:'Montserrat', sans-serif;
-    }
-    #rlt {
-        width: 300px;
-        margin-top: 40px;
-        margin-left: 40px;
-        font-size: x-large;
-        float: left;
-        font-family:'Montserrat', sans-serif;
-    }
-    #rst {
-        width: 300px;
-        margin-top: 40px;
-        margin-left: 20px;
-        font-size: x-large;
-        float: left;
-        font-family:'Montserrat', sans-serif;
-    }
-    #SD {
-        margin-top: 200px;
-        color:red;
-        font-size: xx-large;
-        font-family: 'Merienda', cursive;
-    }
-    #sbT {
-        width: 240px;
-        margin-top: 40px;
-        margin-left: 120px;
-        font-size: x-large;
-        font-weight: bold;
-        float: left;
-        font-family:'Montserrat', sans-serif;
-    }
-    #smT {
-        width: 200px;
-        margin-top: 40px;
-        margin-left: 79px;
-        font-size: x-large;
-        font-weight: bold;
-        float: left;
-        font-family:'Montserrat', sans-serif;
-    }
-    #stT {
-        margin-top: 40px;
-        margin-left: 135px;
-        font-size: x-large;
-        font-weight: bold;
-        float: left;
-        font-family:'Montserrat', sans-serif;
-    }
-    #sbG {
-        width: 0px;
-        margin-top: 30px;
-        margin-left: 40px;
-        float: left;
-    }
-    #smG {
-        width: 0px;
-        margin-top: 30px;
-        margin-left: 340px;
-        float: left;
-    }
-    #stG {
-        width: 0px;
-        margin-top: 30px;
-        margin-left: 320px;
-        float: left;
-    }
-    #sbt {
-        width: 300px;
-        margin-top: 40px;
-        margin-left: 40px;
-        font-size: x-large;
-        float: left;
-        font-family:'Montserrat', sans-serif;
-    }
-    #smt {
-        width: 300px;
-        margin-top: 40px;
-        margin-left: 40px;
-        font-size: x-large;
-        float: left;
-        font-family:'Montserrat', sans-serif;
-    }
-    #stt {
-        width: 300px;
-        margin-top: 40px;
-        margin-left: 20px;
-        font-size: x-large;
-        float: left;
-        font-family:'Montserrat', sans-serif;
-    }
+}
