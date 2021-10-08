@@ -232,10 +232,10 @@ nav ul li a:hover::after {
     margin-left: 75px;
 }
 .text-boxpapua img {
-    width: 327px;
-    height: 174px;
+    width: 613.27px;
+    height: 379.07px;
+    margin-right: 45px;
     border-radius: 25px;
-    margin-right: 150px;
 }
 .boxpapua {
     position: absolute;
@@ -466,5 +466,7 @@ nav ul li a:hover::after {
     }
     .text-boxpapua img {
         margin-left: 80px;
+        width: 336px;
+        height: 234px;
     }
 }
