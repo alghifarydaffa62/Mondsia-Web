@@ -208,29 +208,34 @@ nav ul li a:hover::after {
 }
 
 /* section papua culture */
-.papua-culture {
-    width: 80%;
-    margin: auto;
-    text-align: justify;
-    padding-top: 50px;
+.papuaculture-heading  {
+    text-align:left;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Merienda', cursive;
+    padding-top: 75px;
+    padding-left: 75px;
 }
-.papua-culture span {
+.papuaculture-heading span {
     color: red;
 }
-.papua-culture h1 {
-    position: absolute;
-    left: 190px;
-    top: 820px;
-    font-size: 30px;
-    font-family: 'Merienda', cursive;
+.text-boxpapua {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.textbox-papua p {
-    position: absolute;
+.text-boxpapua p {
     text-align: justify;
-    left: 129px;
-    top: 918px;
-    font-size: 16px;
-    font-family: 'montserrat';
+    font-family: 'Montserrat';
+    margin-left: 75px;
+}
+.text-boxpapua img {
+    width: 327px;
+    height: 174px;
+    border-radius: 25px;
+    margin-right: 150px;
 }
 .boxpapua {
     position: absolute;
@@ -266,22 +271,22 @@ nav ul li a:hover::after {
     top: 1222px;
     border-radius: 33px;
 }
-.papua-culture img:hover {
-    box-shadow:  0 0 20px 0px blue;
-}
+.text-boxpapua img:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+
+} 
 /* tari Papua */
 .taripapua {
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 200px;
 }
 .taripapua-heading {
     text-align: center;
     font-size: 20px;
     color: red;
     font-family: 'Merienda', cursive;
-    margin-top: 500px;
+    margin-top: 250px;
     display: inline-flex;
     align-items: center;
 }
@@ -455,5 +460,11 @@ nav ul li a:hover::after {
         background-size: cover;
         position: relative;
         width: 100%;
+    }
+    .text-boxpapua {
+        flex-direction: column;
+    }
+    .text-boxpapua img {
+        margin-left: 80px;
     }
 }
